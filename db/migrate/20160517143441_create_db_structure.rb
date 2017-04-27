@@ -1,5 +1,5 @@
 # This migration comes from cama_contact_form_engine (originally 20160517143441)
-class CreateDbStructure < ActiveRecord::Migration
+class CreateDbStructure < ActiveRecord::Migration[4.2]
   def change
     unless table_exists? 'plugins_contact_forms'
       create_table :plugins_contact_forms do |t|
